@@ -1,0 +1,97 @@
+/* style.css */
+
+/* Alapvető stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffc107;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header-carousel .carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.search-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.property-card {
+    margin-bottom: 20px;
+}
+
+.property-card img {
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #343a40;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #495057;
+}
+
+/* Reszponzív stílusok */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .search-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-carousel .carousel-inner img {
+        max-height: 300px;
+    }
+
+    .property-card img {
+        max-height: 150px;
+    }
+}
